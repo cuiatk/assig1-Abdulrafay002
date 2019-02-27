@@ -35,12 +35,11 @@ public class RulesOf6005 {
     public static boolean mayUseCodeInAssignment(boolean writtenByYourself,
             boolean availableToOthers, boolean writtenAsCourseWork,
             boolean citingYourSource, boolean implementationRequired) {
-    	   
-        if (writtenByYourself==true && availableToOthers==false && writtenAsCourseWork ==true && citingYourSource==true && implementationRequired==true)
-    return true;
-        
-        else 
-     	   return false;
+    	 
+    	  if(writtenByYourself==true && availableToOthers==false && writtenAsCourseWork==true &&writtenAsCourseWork==true && implementationRequired==true)
+    	       return true;
+    	       else
+    	    	   return false;
     }
     
     /**
