@@ -36,12 +36,16 @@ public class RulesOf6005 {
 	
     public static boolean mayUseCodeInAssignment(boolean writtenByYourself,
             boolean availableToOthers, boolean writtenAsCourseWork,
-            boolean citingYourSource, boolean implementationRequired) {
-    	 
-    	  if(writtenByYourself==true && availableToOthers==false && writtenAsCourseWork==true &&writtenAsCourseWork==true && implementationRequired==true)
-    	       return true;
-    	       else
-    	    	   return false;
+            boolean citingYourSource, boolean implementationRequired)
+    {
+    	 boolean a=false;
+ 
+    	 if(writtenByYourself==true && availableToOthers==false && writtenAsCourseWork==true &&writtenAsCourseWork==true && implementationRequired==true)
+    	 {
+    		 return a=true;
+          } else {
+    	    	   return a;
+          }
     }
     
     /**

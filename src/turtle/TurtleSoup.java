@@ -15,7 +15,13 @@ public class TurtleSoup {
      * @param sideLength length of each side
      */
     public static void drawSquare(Turtle turtle, int sideLength) {
-        throw new RuntimeException("implement me!");
+    	turtle.color(PenColor.RED);
+        for(int i=0;i<4;i++) {
+     	   turtle.forward(100);
+     	   turtle.turn(90);
+     	
+        } 
+        
     }
 
     /**
@@ -108,8 +114,168 @@ public class TurtleSoup {
      * 
      * @param turtle the turtle context
      */
-    public static void drawPersonalArt(Turtle turtle) {
-        throw new RuntimeException("implement me!");
+    public static void drawPersonalArt(DrawableTurtle turtle) {
+    	 DrawableTurtle turtlePersonel = new DrawableTurtle();
+    	 turtlePersonel.color(PenColor.RED);
+    	 turtlePersonel.draw();
+         turtlePersonel.currentPosition = new Point(-150,150);
+         turtlePersonel.turn(150);
+         turtlePersonel.forward(100);
+         turtlePersonel.turn(60);
+         turtlePersonel.forward(100);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(100);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(100);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(100);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(100);
+         
+         turtlePersonel.color(PenColor.ORANGE);
+         turtlePersonel.currentPosition = new Point(-100,100);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(60);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(50);
+         
+         
+         turtlePersonel.currentPosition = new Point(-105,90);
+         turtlePersonel.color(PenColor.MAGENTA);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(60);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(35);
+         
+         turtlePersonel.currentPosition = new Point(-105,125);
+         turtlePersonel.color(PenColor.BLACK);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(75);
+         turtlePersonel.turn(60);
+         turtlePersonel.forward(75);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(75);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(75);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(75);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(75);
+
+         turtlePersonel.currentPosition = new Point(-35,90);
+         turtlePersonel.color(PenColor.YELLOW);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(60);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(35);
+       
+         
+    	 turtlePersonel.color(PenColor.PINK);
+    	 turtlePersonel.draw();
+         turtlePersonel.currentPosition = new Point(-50,150);
+         turtlePersonel.turn(180);
+         turtlePersonel.forward(100);
+         turtlePersonel.turn(60);
+         turtlePersonel.forward(100);
+         turtlePersonel.turn(-300);
+         turtlePersonel.forward(100);
+         turtlePersonel.turn(60);
+         turtlePersonel.forward(100);
+         
+         turtlePersonel.color(PenColor.BLUE);
+         turtlePersonel.currentPosition = new Point(-50,100);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(60);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(50);
+         
+         turtlePersonel.currentPosition = new Point(-35,125);
+         turtlePersonel.color(PenColor.GRAY);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(75);
+         turtlePersonel.turn(60);
+         turtlePersonel.forward(75);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(75);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(75);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(75);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(75);
+         
+         turtlePersonel.currentPosition = new Point(35,90);
+         turtlePersonel.color(PenColor.BLACK);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(60);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(35);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(35);
+         
+         turtlePersonel.color(PenColor.RED);
+         turtlePersonel.currentPosition = new Point(-0,100);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(60);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(-120);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(-60);
+         turtlePersonel.forward(50);
+         
+         turtlePersonel.color(PenColor.BLACK);
+         turtlePersonel.currentPosition = new Point(85,90);
+         turtlePersonel.turn(180);
+         turtlePersonel.forward(150);
+         turtlePersonel.turn(90);
+         turtlePersonel.forward(50);
+         turtlePersonel.turn(90);
+         turtlePersonel.forward(150);
+       
+         
     }
 
     /**
@@ -122,10 +288,13 @@ public class TurtleSoup {
     public static void main(String args[]) {
         DrawableTurtle turtle = new DrawableTurtle();
 
-        drawSquare(turtle, 40);
-
-        // draw the window
         turtle.draw();
+        drawSquare(turtle,0);
+        
+        drawPersonalArt(turtle);
+        
+       
+       
     }
 
 }

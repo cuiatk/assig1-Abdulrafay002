@@ -24,9 +24,10 @@ public class DrawableTurtle implements Turtle {
     private final List<Action> actionList;
     private final List<LineSegment> lines;
 
-    private Point currentPosition;
-    private double currentHeading;
-    private PenColor currentColor;
+    
+    public double currentHeading;
+    public PenColor currentColor;
+	public Point currentPosition;
 
     /**
      * Create a new turtle for drawing on screen.
