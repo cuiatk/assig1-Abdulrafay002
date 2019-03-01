@@ -34,7 +34,8 @@ public class TurtleSoup {
      * @return angle in degrees, where 0 <= angle < 360
      */
     public static double calculateRegularPolygonAngle(int sides) {
-        throw new RuntimeException("implement me!");
+    	
+    	return (sides-2)*180.0/sides;
     }
 
     /**
@@ -48,7 +49,7 @@ public class TurtleSoup {
      * @return the integer number of sides
      */
     public static int calculatePolygonSidesFromAngle(double angle) {
-        throw new RuntimeException("implement me!");
+    	throw new RuntimeException("implement me!");
     }
 
     /**
@@ -60,8 +61,83 @@ public class TurtleSoup {
      * @param sides number of sides of the polygon to draw
      * @param sideLength length of each side
      */
-    public static void drawRegularPolygon(Turtle turtle, int sides, int sideLength) {
-        throw new RuntimeException("implement me!");
+    public static void drawRegularPolygon(DrawableTurtle polygonTurtle, int sides, int sideLength) {
+    	  polygonTurtle = new DrawableTurtle();
+    	polygonTurtle.draw();
+    	 polygonTurtle.color(PenColor.RED);
+    	for(int x = sides; x > 0; x--)
+    	{
+            polygonTurtle.forward(sideLength);
+            polygonTurtle.turn(180.0 - calculateRegularPolygonAngle(sides));
+        }
+    	
+    	  polygonTurtle.color(PenColor.RED);
+    	  for (int k=0;k<=5;k++) {
+    	  polygonTurtle.currentPosition = new Point(67,47);
+    	  polygonTurtle.turn(60);
+    	  polygonTurtle.forward(50);}
+    	  
+    	 
+    	  
+    	 polygonTurtle.color(PenColor.BLACK);
+    	  for (int j=0;j<=80;j++) {
+    		  polygonTurtle.currentPosition = new Point(67,97);
+        	  polygonTurtle.turn(5);
+        	  polygonTurtle.forward(10);
+    	  }
+    	  
+    	  polygonTurtle.color(PenColor.BLACK);
+    	  polygonTurtle.currentPosition = new Point(108,87);
+    	  polygonTurtle.turn(90);
+    	  for (int j=0;j<=80;j++) {
+    		 
+        	  polygonTurtle.turn(5);
+        	  polygonTurtle.forward(5);
+    	  }
+    	  
+    	  polygonTurtle.color(PenColor.BLACK);
+    	  for (int j=0;j<=80;j++) {
+    		  polygonTurtle.currentPosition = new Point(106,73);
+        	  polygonTurtle.turn(5);
+        	  polygonTurtle.forward(10);
+    	  }
+    	  polygonTurtle.color(PenColor.RED);
+    	  for (int j=0;j<=80;j++) {
+    		  polygonTurtle.currentPosition = new Point(67,48);
+        	  polygonTurtle.turn(5);
+        	  polygonTurtle.forward(10);
+    	  }
+    	 
+    	  polygonTurtle.color(PenColor.BLACK);
+    	  for (int j=0;j<=80;j++) {
+    		  polygonTurtle.currentPosition = new Point(67,0);
+        	  polygonTurtle.turn(5);
+        	  polygonTurtle.forward(10);
+    	  }
+    	  
+    	  polygonTurtle.color(PenColor.BLACK);
+    	  for (int j=0;j<=80;j++) {
+    		  polygonTurtle.currentPosition = new Point(22,71);
+        	  polygonTurtle.turn(5);
+        	  polygonTurtle.forward(10);
+    	  }
+    	  
+    	  polygonTurtle.color(PenColor.BLACK);
+    	  for (int j=0;j<=80;j++) {
+    		  polygonTurtle.currentPosition = new Point(108,28);
+        	  polygonTurtle.turn(5);
+        	  polygonTurtle.forward(10);
+    	  }
+    	  
+    	  polygonTurtle.color(PenColor.BLACK);
+    	  for (int j=0;j<=80;j++) {
+    		  polygonTurtle.currentPosition = new Point(22,28);
+        	  polygonTurtle.turn(5);
+        	  polygonTurtle.forward(10);
+    	  }
+    	  
+
+
     }
 
     /**
@@ -85,7 +161,7 @@ public class TurtleSoup {
      */
     public static double calculateHeadingToPoint(double currentHeading, int currentX, int currentY,
                                                  int targetX, int targetY) {
-        throw new RuntimeException("implement me!");
+    	throw new RuntimeException("implement me!");
     }
 
     /**
@@ -102,8 +178,10 @@ public class TurtleSoup {
      * @return list of heading adjustments between points, of size 0 if (# of points) == 0,
      *         otherwise of size (# of points) - 1
      */
-    public static List<Double> calculateHeadings(List<Integer> xCoords, List<Integer> yCoords) {
-        throw new RuntimeException("implement me!");
+    public static List<Double> calculateHeadings(List<Integer> xCoords, List<Integer> yCoords) 
+    {
+    	throw new RuntimeException("implement me!");
+    	
     }
 
     /**
@@ -114,8 +192,8 @@ public class TurtleSoup {
      * 
      * @param turtle the turtle context
      */
-    public static void drawPersonalArt(DrawableTurtle turtle) {
-    	 DrawableTurtle turtlePersonel = new DrawableTurtle();
+    public static void drawPersonalArt(DrawableTurtle turtlePersonel) {
+    	// DrawableTurtle turtlePersonel = new DrawableTurtle();
     	 turtlePersonel.color(PenColor.RED);
     	 turtlePersonel.draw();
          turtlePersonel.currentPosition = new Point(-150,150);
@@ -149,7 +227,7 @@ public class TurtleSoup {
          
          
          turtlePersonel.currentPosition = new Point(-105,90);
-         turtlePersonel.color(PenColor.MAGENTA);
+         turtlePersonel.color(PenColor.GREEN);
          turtlePersonel.turn(-120);
          turtlePersonel.forward(35);
          turtlePersonel.turn(60);
@@ -164,7 +242,7 @@ public class TurtleSoup {
          turtlePersonel.forward(35);
          
          turtlePersonel.currentPosition = new Point(-105,125);
-         turtlePersonel.color(PenColor.BLACK);
+         turtlePersonel.color(PenColor.RED);
          turtlePersonel.turn(-120);
          turtlePersonel.forward(75);
          turtlePersonel.turn(60);
@@ -179,7 +257,7 @@ public class TurtleSoup {
          turtlePersonel.forward(75);
 
          turtlePersonel.currentPosition = new Point(-35,90);
-         turtlePersonel.color(PenColor.YELLOW);
+         turtlePersonel.color(PenColor.GRAY);
          turtlePersonel.turn(-120);
          turtlePersonel.forward(35);
          turtlePersonel.turn(60);
@@ -194,8 +272,8 @@ public class TurtleSoup {
          turtlePersonel.forward(35);
        
          
-    	 turtlePersonel.color(PenColor.PINK);
-    	 turtlePersonel.draw();
+    	 turtlePersonel.color(PenColor.MAGENTA);
+    	 
          turtlePersonel.currentPosition = new Point(-50,150);
          turtlePersonel.turn(180);
          turtlePersonel.forward(100);
@@ -206,7 +284,7 @@ public class TurtleSoup {
          turtlePersonel.turn(60);
          turtlePersonel.forward(100);
          
-         turtlePersonel.color(PenColor.BLUE);
+         turtlePersonel.color(PenColor.CYAN);
          turtlePersonel.currentPosition = new Point(-50,100);
          turtlePersonel.turn(-120);
          turtlePersonel.forward(50);
@@ -222,7 +300,7 @@ public class TurtleSoup {
          turtlePersonel.forward(50);
          
          turtlePersonel.currentPosition = new Point(-35,125);
-         turtlePersonel.color(PenColor.GRAY);
+         turtlePersonel.color(PenColor.GREEN);
          turtlePersonel.turn(-120);
          turtlePersonel.forward(75);
          turtlePersonel.turn(60);
@@ -251,7 +329,7 @@ public class TurtleSoup {
          turtlePersonel.turn(-60);
          turtlePersonel.forward(35);
          
-         turtlePersonel.color(PenColor.RED);
+         turtlePersonel.color(PenColor.BLUE);
          turtlePersonel.currentPosition = new Point(-0,100);
          turtlePersonel.turn(-120);
          turtlePersonel.forward(50);
@@ -274,6 +352,10 @@ public class TurtleSoup {
          turtlePersonel.forward(50);
          turtlePersonel.turn(90);
          turtlePersonel.forward(150);
+         
+       
+      
+         
        
          
     }
@@ -287,11 +369,18 @@ public class TurtleSoup {
      */
     public static void main(String args[]) {
         DrawableTurtle turtle = new DrawableTurtle();
+        DrawableTurtle polygonTurtle= new DrawableTurtle();
+        DrawableTurtle turtlePersonel= new DrawableTurtle();
 
         turtle.draw();
         drawSquare(turtle,0);
+        drawRegularPolygon(polygonTurtle,5,100);
+        drawPersonalArt(turtlePersonel);
         
-        drawPersonalArt(turtle);
+       
+        
+        
+        
         
        
        
