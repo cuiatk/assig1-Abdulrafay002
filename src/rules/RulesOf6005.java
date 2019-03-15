@@ -43,9 +43,8 @@ public class RulesOf6005 {
     	 if(writtenByYourself==true && availableToOthers==false && writtenAsCourseWork==true &&writtenAsCourseWork==true && implementationRequired==true)
     	 {
     		 return a=true;
-          } else {
-    	    	   return a;
-          }
+          }  
+    	 return a;
     }
     
     /**
@@ -57,7 +56,7 @@ public class RulesOf6005 {
      */
     public static void main(String[] args) {
         System.out.println("You may certainly use code you wrote yourself: " +
-            RulesOf6005.mayUseCodeInAssignment(true, false, true, true, true));
+            RulesOf6005.mayUseCodeInAssignment(false, false, true, true, true));
         
     }
 }
